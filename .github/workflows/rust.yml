@@ -1,4 +1,4 @@
-name: Compile, lint & test
+name: Compile, format, lint & test
 
 on:
   workflow_dispatch:
