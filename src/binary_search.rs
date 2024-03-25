@@ -5,8 +5,8 @@
  * O(log n) time complexity.
  */
 fn binary_search(haystack: Vec<i32>, needle: i32) -> Option<usize> {
-    let mut low = 0;
-    let mut high = haystack.len();
+    let mut low = 0; // inclusive
+    let mut high = haystack.len(); // exclusive
     while low < high {
         let middle = low + (high - low) / 2;
         let value = *haystack.get(middle).unwrap(); // Must always exist
@@ -14,9 +14,9 @@ fn binary_search(haystack: Vec<i32>, needle: i32) -> Option<usize> {
             return Some(middle);
         }
         if value > needle {
-            high = middle;
+            high = middle; // high is exclusive so middle is excluded which is good since we checked middle just now.
         } else {
-            low = middle + 1;
+            low = middle + 1; // + 1 since low is inclusive and we checked middle just now.
         }
     }
     None
