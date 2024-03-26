@@ -9,7 +9,7 @@ fn binary_search(haystack: Vec<i32>, needle: i32) -> Option<usize> {
     let mut high = haystack.len(); // exclusive
     while low < high {
         let middle = low + (high - low) / 2;
-        let value = *haystack.get(middle).unwrap(); // Must always exist
+        let value = haystack[middle]; // Must always exist
         if value == needle {
             return Some(middle);
         }

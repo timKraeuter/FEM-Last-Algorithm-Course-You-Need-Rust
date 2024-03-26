@@ -4,8 +4,8 @@
  * O(n) time complexity.
  */
 fn linear_search(haystack: Vec<i32>, needle: i32) -> Option<usize> {
-    for (index, element) in haystack.iter().enumerate() {
-        if *element == needle {
+    for (index, element) in haystack.into_iter().enumerate() {
+        if element == needle {
             return Some(index);
         }
     }

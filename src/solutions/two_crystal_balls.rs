@@ -10,7 +10,7 @@ fn two_crystal_balls(breaks: Vec<bool>) -> usize {
     let jmp_amount = floor_sqrt(breaks.len());
     let mut position = jmp_amount;
     while position < breaks.len() {
-        let broken = *breaks.get(position).unwrap(); // Always exists due to while condition.
+        let broken = breaks[position];
         if broken {
             // First ball broken!
             break;
@@ -21,7 +21,7 @@ fn two_crystal_balls(breaks: Vec<bool>) -> usize {
     // Only one ball left: Linear search from position - jmp to position where it broke.
     let mut last_good_position = position - jmp_amount;
     while last_good_position <= position {
-        let broken = *breaks.get(last_good_position).unwrap();
+        let broken = breaks[last_good_position];
         if broken {
             return last_good_position;
         }
