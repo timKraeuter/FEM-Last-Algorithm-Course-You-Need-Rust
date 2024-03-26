@@ -5,7 +5,7 @@
  */
 fn bubble_sort(mut array: Vec<i32>) -> Vec<i32> {
     let mut i = 0;
-    while i < array.len() {
+    while i < array.len() { // There are no old school for loops in Rust, so it is a bit verbose.
         let mut j = 0;
         while j < array.len() - 1 - i {
             if array[j] > array[j + 1] {
