@@ -1,7 +1,7 @@
 #[allow(dead_code)]
+#[allow(unused)]
 /**
  * Return the index of the element v if it exists using linear search.
- * O(n) time complexity.
  */
 fn linear_search(haystack: Vec<i32>, needle: i32) -> Option<usize> {
     todo!();

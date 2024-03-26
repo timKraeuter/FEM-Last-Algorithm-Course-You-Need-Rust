@@ -1,8 +1,8 @@
 #[allow(dead_code)]
+#[allow(unused)]
 /**
  * Return the index of the element v if it exists using binary search.
  * The input vector must be ordered for binary search.
- * O(log n) time complexity.
  */
 fn binary_search(haystack: Vec<i32>, needle: i32) -> Option<usize> {
     todo!();
