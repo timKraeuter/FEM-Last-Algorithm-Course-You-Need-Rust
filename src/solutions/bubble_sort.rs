@@ -9,10 +9,13 @@ fn bubble_sort(mut array: Vec<i32>) -> Vec<i32> {
         let mut j = 0;
         while j < array.len() - 1 - i {
             if array[j] > array[j + 1] {
-                // Swap
-                let tmp = array[j];
-                array[j] = array[j + 1];
-                array[j + 1] = tmp;
+                // Swap manually
+                // let tmp = array[j];
+                // array[j] = array[j + 1];
+                // array[j + 1] = tmp;
+
+                // Swap function exists in rust.
+                array.swap(j, j + 1);
             }
             j += 1;
         }
