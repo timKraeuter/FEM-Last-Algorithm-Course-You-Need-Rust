@@ -1,5 +1,7 @@
+mod data_structures;
 mod problems;
 mod solutions;
+
 use rand::seq::SliceRandom;
 
 fn main() {
