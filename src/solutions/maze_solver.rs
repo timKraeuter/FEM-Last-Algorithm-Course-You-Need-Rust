@@ -30,7 +30,7 @@ fn walk(
         return false;
     }
     // Hitting a wall
-    if get_symbol_for_point(&maze, &current) == wall {
+    if get_symbol_for_point(maze, current) == wall {
         return false;
     }
     // Finding the end
@@ -63,7 +63,7 @@ fn walk(
     false
 }
 
-fn get_symbol_for_point<'a>(maze: &Vec<&'a str>, point: &Point) -> &'a str {
+fn get_symbol_for_point<'a>(maze: &[&'a str], point: &Point) -> &'a str {
     let row = maze[point.y as usize];
     let x = point.x as usize;
     &row[x..x + 1]
