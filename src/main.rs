@@ -9,6 +9,7 @@ fn main() {
         "binary_search",
         "two_crystal_balls",
         "bubble_sort",
+        "maze_solver",
     ];
     println!("All problems are {:?}.", problem_names);
     println!();
