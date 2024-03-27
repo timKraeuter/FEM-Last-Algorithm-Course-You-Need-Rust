@@ -21,7 +21,7 @@ fn qs(arr: &mut Vec<i32>, lo: usize, hi: usize) {
     qs(arr, pivot_idx + 1, hi);
 }
 
-fn partition(arr: &mut Vec<i32>, lo: usize, hi: usize) -> usize {
+fn partition(arr: &mut [i32], lo: usize, hi: usize) -> usize {
     let pivot = arr[hi]; // Pivot is chosen to be last but could also be middle.
     let mut idx = lo as i32 - 1; // let it become negative up to -1
 
