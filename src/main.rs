@@ -10,6 +10,7 @@ fn main() {
         "two_crystal_balls",
         "bubble_sort",
         "maze_solver",
+        "quick_sort",
     ];
     println!("All problems are {:?}.", problem_names);
     println!();
