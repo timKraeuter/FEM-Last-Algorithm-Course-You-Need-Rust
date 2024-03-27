@@ -12,6 +12,6 @@ fn bubble_sort_test() {
     assert_eq!(empty, bubble_sort(vec![]));
     assert_eq!(vec![1], bubble_sort(vec![1]));
 
-    assert_eq!(vec![1, 3, 2], bubble_sort(vec![1, 3, 2]));
-    assert_eq!(vec![1, 2, 5, 6, 55], bubble_sort(vec![1, 55, 3, 6, 5]));
+    assert_eq!(vec![1, 2, 3], bubble_sort(vec![1, 3, 2]));
+    assert_eq!(vec![1, 3, 5, 6, 55], bubble_sort(vec![1, 55, 3, 6, 5]));
 }
