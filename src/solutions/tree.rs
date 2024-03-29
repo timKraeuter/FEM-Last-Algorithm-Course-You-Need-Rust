@@ -10,13 +10,11 @@ pub fn make_test_tree() -> BTree {
         ),
     )
 }
-
 pub struct BTree {
     pub value: i32,
     pub left: Option<Box<BTree>>,
     pub right: Option<Box<BTree>>,
 }
-
 impl BTree {
     fn node(value: i32, left: BTree, right: BTree) -> BTree {
         BTree {

@@ -1,5 +1,5 @@
 #[allow(unused)]
-use crate::solutions::tree::{BTree, make_test_tree};
+use crate::solutions::tree::{make_test_tree, BTree};
 
 #[allow(dead_code)]
 #[allow(unused)]
@@ -33,4 +33,3 @@ fn pre_order_search_test() {
         pre_order_search(tree)
     );
 }
-
