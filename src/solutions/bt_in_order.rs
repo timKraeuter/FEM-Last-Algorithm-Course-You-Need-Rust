@@ -1,5 +1,5 @@
 #[allow(unused)]
-use crate::solutions::tree::{make_test_tree, BTree};
+use crate::solutions::tree::{make_test_tree1, BTree};
 
 #[allow(dead_code)]
 #[allow(unused)]
@@ -27,7 +27,7 @@ fn walk(current: Option<&BTree>, path: &mut Vec<i32>) {
 
 #[test]
 fn in_order_search_test() {
-    let tree = make_test_tree();
+    let tree = make_test_tree1();
     assert_eq!(
         vec![5, 7, 10, 15, 20, 29, 30, 45, 50, 100],
         in_order_search(tree)
