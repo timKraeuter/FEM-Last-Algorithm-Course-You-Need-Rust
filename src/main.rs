@@ -15,6 +15,7 @@ fn main() {
         "bt_in_order",
         "bt_post_order",
         "bt_bfs",
+        "compare_binary_trees",
     ];
     println!("All problems are {:?}.", problem_names);
     println!();
