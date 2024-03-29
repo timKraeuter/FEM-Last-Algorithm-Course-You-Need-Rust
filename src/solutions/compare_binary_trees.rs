@@ -23,7 +23,7 @@ fn compare_option(a: Option<&BTree>, b: Option<&BTree>) -> bool {
 }
 
 #[test]
-fn bfs_search_test() {
+fn bfs_compare_test() {
     let tree1 = make_test_tree1();
     let tree2 = make_test_tree2();
     assert_eq!(true, compare(&tree1, &tree1));
