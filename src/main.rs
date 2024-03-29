@@ -14,6 +14,7 @@ fn main() {
         "bt_pre_order",
         "bt_in_order",
         "bt_post_order",
+        "bt_bfs",
     ];
     println!("All problems are {:?}.", problem_names);
     println!();
