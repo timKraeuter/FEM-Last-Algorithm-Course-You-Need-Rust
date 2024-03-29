@@ -11,6 +11,9 @@ fn main() {
         "bubble_sort",
         "maze_solver",
         "quick_sort",
+        "bt_pre_order",
+        "bt_in_order",
+        "bt_post_order",
     ];
     println!("All problems are {:?}.", problem_names);
     println!();
