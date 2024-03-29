@@ -1,24 +1,25 @@
+#[allow(unused)]
 use crate::solutions::tree::{make_test_tree1, make_test_tree2, BTree};
 
+#[allow(dead_code)]
+#[allow(unused)]
 fn compare(a: &BTree, b: &BTree) -> bool {
-    if a.value != b.value {
-        return false;
-    }
-    let left_compare = match (a.left.as_deref(), b.left.as_deref()) {
+    compare_option(Some(a), Some(b))
+}
+
+fn compare_option(a: Option<&BTree>, b: Option<&BTree>) -> bool {
+    match (a, b) {
         (None, None) => true,
-        (Some(_), None) => false, // Could merge this and the next into (_,_). Same below
+        (Some(_), None) => false,
         (None, Some(_)) => false,
-        (Some(a_left), Some(b_left)) => compare(a_left, b_left),
-    };
-    if left_compare {
-        return match (a.right.as_deref(), b.right.as_deref()) {
-            (None, None) => true,
-            (Some(_), None) => false,
-            (None, Some(_)) => false,
-            (Some(a_right), Some(b_right)) => compare(a_right, b_right),
-        };
+        (Some(a), Some(b)) => {
+            if a.value != b.value {
+                return false;
+            }
+            compare_option(a.left.as_deref(), b.left.as_deref())
+                && compare_option(a.right.as_deref(), b.right.as_deref())
+        }
     }
-    false
 }
 
 #[test]
