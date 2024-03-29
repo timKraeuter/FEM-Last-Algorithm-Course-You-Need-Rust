@@ -1,7 +1,6 @@
-use std::collections::VecDeque;
 #[allow(unused)]
 use crate::solutions::tree::{make_test_tree, BTree};
-
+use std::collections::VecDeque;
 #[allow(dead_code)]
 #[allow(unused)]
 fn bfs(root: &BTree, needle: i32) -> bool {
