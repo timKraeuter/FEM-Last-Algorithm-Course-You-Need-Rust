@@ -17,6 +17,7 @@ fn main() {
         "bt_bfs",
         "compare_binary_trees",
         "dfs_on_bst",
+        "min_heap",
     ];
     println!("All problems are {:?}.", problem_names);
     println!();

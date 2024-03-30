@@ -8,6 +8,7 @@ mod compare_binary_trees;
 mod dfs_on_bst;
 mod linear_search;
 mod maze_solver;
+mod min_heap;
 mod quick_sort;
 pub mod tree;
 mod two_crystal_balls;
