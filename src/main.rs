@@ -16,6 +16,7 @@ fn main() {
         "bt_post_order",
         "bt_bfs",
         "compare_binary_trees",
+        "dfs_on_bst",
     ];
     println!("All problems are {:?}.", problem_names);
     println!();

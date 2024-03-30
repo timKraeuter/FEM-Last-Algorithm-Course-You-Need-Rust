@@ -5,6 +5,7 @@ mod bt_post_order;
 mod bt_pre_order;
 mod bubble_sort;
 mod compare_binary_trees;
+mod dfs_on_bst;
 mod linear_search;
 mod maze_solver;
 mod quick_sort;
