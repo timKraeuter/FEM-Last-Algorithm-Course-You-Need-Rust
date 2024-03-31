@@ -10,7 +10,7 @@ Currently, we have not implemented the course data structures since those are no
 # Solutions & Problems
 
 The solutions are in the [`solutions`](./src/solutions) dir, while the [`problems`](./src/problems) dir contains the problems without implementation.
-Each problem file has a minimal set of test cases you can run after implementing the problem.
+Each problem file has a minimal set of test cases you can run after implementing the problem. The tests are usually taken from the [official repository](https://github.com/ThePrimeagen/kata-machine).
 
 Rust allows for unique solutions for some problems due to its unique capabilities (see, for example, [comparing binary trees](./src/solutions/compare_binary_trees.rs)).
 

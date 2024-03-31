@@ -1,3 +1,4 @@
+mod bfs_graph_matrix;
 mod binary_search;
 mod bt_bfs;
 mod bt_in_order;
