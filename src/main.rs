@@ -19,6 +19,7 @@ fn main() {
         "dfs_on_bst",
         "min_heap",
         "bfs_graph_matrix",
+        "dfs_graph_list",
     ];
     println!("All problems are {:?}.", problem_names);
     println!();
