@@ -1,3 +1,4 @@
+#[allow(unused)]
 pub fn matrix() -> Vec<Vec<usize>> {
     vec![
         vec![0, 3, 1, 0, 0, 0, 0], // 0

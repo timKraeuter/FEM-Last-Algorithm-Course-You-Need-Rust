@@ -1,12 +1,12 @@
+#[allow(unused)]
 use crate::solutions::graph::matrix;
-
 #[allow(dead_code)]
 #[allow(unused)]
 /**
  * BFS search on a graph returning the found path.
  * The graph is represented as an adjacency matrix.
  */
-fn bfs(graph: &Vec<Vec<usize>>, source: usize, needle: usize) -> Option<Vec<usize>> {
+fn bfs(graph: &[Vec<usize>], source: usize, needle: usize) -> Option<Vec<usize>> {
     todo!();
 }
 

@@ -1,3 +1,4 @@
+#[allow(unused)]
 use crate::solutions::graph::matrix;
 use std::collections::VecDeque;
 
@@ -7,7 +8,7 @@ use std::collections::VecDeque;
  * BFS search on a graph returning the found path.
  * The graph is represented as an adjacency matrix.
  */
-fn bfs(graph: &Vec<Vec<usize>>, source: usize, needle: usize) -> Option<Vec<usize>> {
+fn bfs(graph: &[Vec<usize>], source: usize, needle: usize) -> Option<Vec<usize>> {
     let mut seen: Vec<bool> = vec![false; graph.len()];
     seen[source] = true;
     let mut previous: Vec<i32> = vec![-1; graph.len()];
