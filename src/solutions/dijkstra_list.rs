@@ -33,7 +33,7 @@ fn dijkstra(graph: &[Vec<WeightedAdjacencyListItem>], source: usize, sink: usize
     out
 }
 
-fn get_lowest_unvisited(seen: &Vec<bool>, distances: &Vec<f64>) -> usize {
+fn get_lowest_unvisited(seen: &[bool], distances: &[f64]) -> usize {
     let mut lowest_distance = f64::INFINITY;
     let mut idx = 0;
     for (index, seen) in seen.iter().enumerate() {
@@ -48,7 +48,7 @@ fn get_lowest_unvisited(seen: &Vec<bool>, distances: &Vec<f64>) -> usize {
     idx
 }
 
-fn has_unvisited(seen: &Vec<bool>, distances: &Vec<f64>) -> bool {
+fn has_unvisited(seen: &[bool], distances: &[f64]) -> bool {
     for (index, seen) in seen.iter().enumerate() {
         if !*seen && distances[index] < f64::INFINITY {
             return true;
