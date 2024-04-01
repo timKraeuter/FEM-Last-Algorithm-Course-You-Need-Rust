@@ -5,7 +5,7 @@
 The last algorithm course you need from [FEM](https://frontendmasters.com/courses/algorithms/) but implemented using **Rust**.
 Slides for the course are available [here](https://theprimeagen.github.io/fem-algos).
 
-Currently, we have not implemented the course data structures since those are notoriously difficult, if not impossible, using safe Rust.
+We have not implemented the course data structures since those are notoriously difficult using safe Rust.
 
 # Solutions & Problems
 
