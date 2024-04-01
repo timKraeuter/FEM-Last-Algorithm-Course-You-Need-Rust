@@ -20,6 +20,7 @@ fn main() {
         "min_heap",
         "bfs_graph_matrix",
         "dfs_graph_list",
+        "dijkstra_list",
     ];
     println!("All problems are {:?}.", problem_names);
     println!();

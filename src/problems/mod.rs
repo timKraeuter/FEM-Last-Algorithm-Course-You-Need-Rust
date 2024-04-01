@@ -8,6 +8,7 @@ mod bubble_sort;
 mod compare_binary_trees;
 mod dfs_graph_list;
 mod dfs_on_bst;
+mod dijkstra_list;
 mod linear_search;
 mod maze_solver;
 mod min_heap;
