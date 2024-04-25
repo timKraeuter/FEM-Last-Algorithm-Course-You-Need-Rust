@@ -12,12 +12,10 @@ fn compare(a: &BTree, b: &BTree) -> bool {
 
 fn sub_compare(a: &Option<Box<BTree>>, b: &Option<Box<BTree>>) -> bool {
     match (a, b) {
-        (None, Some(_)) => { false }
-        (Some(_), None) => { false }
-        (Some(a), Some(b)) => {
-            compare(a, b)
-        }
-        (None, None) => { true }
+        (None, Some(_)) => false,
+        (Some(_), None) => false,
+        (Some(a), Some(b)) => compare(a, b),
+        (None, None) => true,
     }
 }
 
