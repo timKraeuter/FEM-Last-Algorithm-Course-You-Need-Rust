@@ -13,10 +13,10 @@ fn binary_search(haystack: Vec<i32>, needle: i32) -> Option<usize> {
         if value == needle {
             return Some(middle);
         }
-        if value > needle {
+        if needle < value {
             high = middle; // high is exclusive so middle is excluded which is good since we checked middle just now.
         } else {
-            low = middle + 1; // + 1 since low is inclusive and we checked middle just now.
+            low = middle + 1; // + 1 since low is inclusive, and we checked middle just now.
         }
     }
     None
