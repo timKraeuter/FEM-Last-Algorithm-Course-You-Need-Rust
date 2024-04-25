@@ -2,7 +2,7 @@
 /**
  * Sort the array in place and then return it.
  */
-fn quick_sort(mut array: Vec<i32>) -> Vec<i32> {
+fn quick_sort(array: Vec<i32>) -> Vec<i32> {
     array
 }
 

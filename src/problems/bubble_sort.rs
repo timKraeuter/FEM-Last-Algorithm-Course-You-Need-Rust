@@ -2,7 +2,7 @@
 /**
  * Sort the array in place and then return it.
  */
-fn bubble_sort(mut array: Vec<i32>) -> Vec<i32> {
+fn bubble_sort(array: Vec<i32>) -> Vec<i32> {
     array
 }
 

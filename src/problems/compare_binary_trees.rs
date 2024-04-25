@@ -6,7 +6,7 @@ fn compare(a: &BTree, b: &BTree) -> bool {
 }
 
 #[test]
-fn bfs_search_test() {
+fn compare_test() {
     let tree1 = make_test_tree1();
     let tree2 = make_test_tree2();
     assert_eq!(true, compare(&tree1, &tree1));

@@ -4,26 +4,25 @@ use crate::solutions::tree::{make_test_tree1, make_test_tree2, BTree};
 #[allow(dead_code)]
 #[allow(unused)]
 fn compare(a: &BTree, b: &BTree) -> bool {
-    compare_option(Some(a), Some(b))
+    if a.value == b.value {
+        return sub_compare(&a.left, &b.left) && sub_compare(&a.right, &b.right);
+    }
+    false
 }
 
-fn compare_option(a: Option<&BTree>, b: Option<&BTree>) -> bool {
+fn sub_compare(a: &Option<Box<BTree>>, b: &Option<Box<BTree>>) -> bool {
     match (a, b) {
-        (None, None) => true,
-        (Some(_), None) => false,
-        (None, Some(_)) => false,
+        (None, Some(_)) => { false }
+        (Some(_), None) => { false }
         (Some(a), Some(b)) => {
-            if a.value != b.value {
-                return false;
-            }
-            compare_option(a.left.as_deref(), b.left.as_deref())
-                && compare_option(a.right.as_deref(), b.right.as_deref())
+            compare(a, b)
         }
+        (None, None) => { true }
     }
 }
 
 #[test]
-fn bfs_compare_test() {
+fn compare_test() {
     let tree1 = make_test_tree1();
     let tree2 = make_test_tree2();
     assert_eq!(true, compare(&tree1, &tree1));
