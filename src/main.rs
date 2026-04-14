@@ -1,7 +1,7 @@
 mod problems;
 mod solutions;
 
-use rand::seq::SliceRandom;
+use rand::prelude::IndexedRandom;
 
 fn main() {
     let problem_names = vec![
@@ -25,7 +25,7 @@ fn main() {
     println!("All problems are {:?}.", problem_names);
     println!();
 
-    let mut rng = rand::thread_rng();
+    let mut rng = rand::rng();
     println!(
         "Try to implement {} in the problems directory.",
         problem_names.choose(&mut rng).unwrap()
