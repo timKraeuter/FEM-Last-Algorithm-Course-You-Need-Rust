@@ -15,7 +15,7 @@ fn search(current: Option<&BTree>, needle: i32) -> bool {
             if needle <= current.value {
                 return search(current.left.as_deref(), needle);
             }
-            return search(current.right.as_deref(), needle);
+            search(current.right.as_deref(), needle)
         }
     }
 }
