@@ -1,5 +1,5 @@
 #[allow(unused)]
-use crate::solutions::graph::{list1, WeightedAdjacencyListItem};
+use crate::solutions::graph::{WeightedAdjacencyListItem, list1};
 
 #[allow(unused)]
 fn dijkstra(graph: &[Vec<WeightedAdjacencyListItem>], source: usize, sink: usize) -> Vec<usize> {

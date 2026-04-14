@@ -1,5 +1,5 @@
 #[allow(unused)]
-use crate::solutions::tree::{make_test_tree1, BTree};
+use crate::solutions::tree::{BTree, make_test_tree1};
 #[allow(unused)]
 fn dfs(head: &BTree, needle: i32) -> bool {
     todo!()

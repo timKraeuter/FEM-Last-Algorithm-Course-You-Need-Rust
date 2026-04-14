@@ -1,5 +1,5 @@
 #[allow(unused)]
-use crate::solutions::tree::{make_test_tree1, BTree};
+use crate::solutions::tree::{BTree, make_test_tree1};
 use std::collections::VecDeque;
 #[allow(dead_code)]
 #[allow(unused)]

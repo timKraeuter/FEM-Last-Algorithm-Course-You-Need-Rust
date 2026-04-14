@@ -1,5 +1,5 @@
 #[allow(unused)]
-use crate::solutions::tree::{make_test_tree1, make_test_tree2, BTree};
+use crate::solutions::tree::{BTree, make_test_tree1, make_test_tree2};
 #[allow(unused)]
 fn compare(a: &BTree, b: &BTree) -> bool {
     todo!()

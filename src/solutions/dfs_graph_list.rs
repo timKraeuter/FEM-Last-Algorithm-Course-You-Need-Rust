@@ -1,5 +1,5 @@
 #[allow(unused)]
-use crate::solutions::graph::{list2, WeightedAdjacencyListItem};
+use crate::solutions::graph::{WeightedAdjacencyListItem, list2};
 
 #[allow(dead_code)]
 #[allow(unused)]
